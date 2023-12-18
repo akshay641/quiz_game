@@ -1,9 +1,15 @@
-import './App.css';
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
+import BaseContainer from "./test/container/BaseContainer";
 
 function App() {
   return (
     <div className="App">
-      <h1 className='text-pink-700'>Akshay</h1>
+      <Routes>
+        {/* <Route path="/" element={ <Home/> } /> */}
+        <Route path="test" element={<BaseContainer />} />
+        {/* <Route path="contact" element={ <Contact/> } /> */}
+      </Routes>
     </div>
   );
 }
